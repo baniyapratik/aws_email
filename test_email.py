@@ -10,7 +10,7 @@ email_tmp_env = Environment(loader=file_loader)
 class Email:
     def __init__(self, RECIPIENT=None, SUBJECT='', BODY_TEXT='', BODY_HTML='', SENDER='admin@cafy.io', CHARSET='UTF-8', region_name='us-east-1'):
         self.SENDER = SENDER
-        self.RECIPIENT = RECIPIENT# This could be one person or a list
+        self.RECIPIENT = RECIPIENT# This has to be a str
         self.SUBJECT = SUBJECT
         self.BODY_TEXT = BODY_TEXT
         self.BODY_HTML = BODY_HTML
